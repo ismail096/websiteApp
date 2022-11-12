@@ -8,6 +8,8 @@ document.addEventListener('readystatechange', function(event) {
     console.log(event.target.readyState); // check for more states
     if (event.target.readyState === "complete") {
         alert("Everything loaded now including images, scripts and styles.");
+        var el = document.getElementsByClassName('vjs-mute-control vjs-control vjs-button vjs-vol-0');
+        el.onclick();
     }
 });
    
@@ -16,7 +18,7 @@ document.addEventListener('readystatechange', function(event) {
 </head>
 <body>
  <div>
-  <p>toto</p>
+  <p>momo</p>
   <iframe allowFullScreen frameborder=0 marginheight=0 marginwidth=0 scrolling='no'src="//emb.apl185.me/player/live.php?id=186051&w=512&h=288" width="512" height="288">Your browser does not support inline frames or is currently configured not to display inline frames.</iframe>
  </div>
 
