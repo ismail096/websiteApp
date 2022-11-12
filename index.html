@@ -1,26 +1,160 @@
 
 <!DOCTYPE html>
 <html>
-<head>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-<script>
-document.addEventListener('readystatechange', function(event) {
-    console.log(event.target.readyState); // check for more states
-    if (event.target.readyState === "complete") {
-         document.getElementsByClassName('vjs-mute-control vjs-control vjs-button vjs-vol-0').click();
-                alert("Everything loaded now including images, scripts and styles.");
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
-    }
-});
-   
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
 
-</script>
-</head>
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 40px 20px 0 20px;
+}
+
+.container .heading{
+  width: 50%;
+  padding-bottom: 50px;
+}
+.container .heading h3{
+  font-size: 3em;
+  font-weight: bolder;
+  padding-bottom: 10px;
+  border-bottom: 3px solid #222;
+}
+
+.container .heading h3 span{
+  font-weight: 100;
+}
+.container .box{
+ display: flex;
+ flex-direction: row;
+ justify-content: space-between;
+}
+
+.container .box .dream{
+  display: flex;
+  flex-direction: column;
+  width: 32.5%;
+}
+
+.container .box .dream img{
+  width: 100%;
+  padding-bottom: 15px;
+  border-radius: 5px;
+}
+
+.container .btn{
+  margin: 40px 0 70px 0;
+  background: #222;
+  padding: 15px 40px ;
+  border-radius: 5px;
+}
+
+.container .btn a{
+ color: #fff;
+ font-size: 1.2em;
+ text-decoration: none;
+ font-weight: bolder;
+ letter-spacing: 3px;
+}
+
+@media only screen and (max-width: 1769px){
+    .container .box{
+   flex-direction: column;
+  }
+
+.container .box .dream{
+  width: 100%;
+}
+
+
+
+
+
+}
+
+@media only screen and (max-width: 1643px){
+.container .heading{
+  width: 100%;
+}
+.container .heading h3{
+  font-size: 1em;
+
+}
+
+
+
+
+
+
+
+}
+</style>
 <body>
- <div>
-  <p>soso</p>
-  <iframe allowFullScreen frameborder=0 marginheight=0 marginwidth=0 scrolling='no'src="//emb.apl185.me/player/live.php?id=186051&w=512&h=288" width="512" height="288">Your browser does not support inline frames or is currently configured not to display inline frames.</iframe>
- </div>
+  <div class="container">
+    <div class="heading">
+      <h3>World cup Qatar 2022</h3>
+    </div>
+    <div class="box">
+      
+      <div class="dream">
+        
+          <a href="https://ekoora.livekoora.online/">
+          <img src="qatar-AR.jpg">
+      </a>
+        
+         <a href="http://bongstreams.com/gamee1.php">
+         <img src="qatar-EN.jpg">
+      </a>
+        
+           <a href="https://www.reddit-soccerstreams.com/">
+                    <img src="qatar-ES.jpg">
+      </a>
+                               
+       
+           <a href="https://ekoora.livekoora.online/">
+            <img src="qatar-FR.jpg">
+      </a>
+        
+          
+        
+           <a href="https://livetvstream.pro/live/canal1_france.php">
+          <img src="qatar-PT.jpg">
+      </a>
+        
+        
+        
+
+         
+    
+         
+       
+         
+            
+      </div>
+
+     
+       
+
+
+
+
+    </div>
+  
+
+
+
+
+  </div>
 
 </body>
 </html>
