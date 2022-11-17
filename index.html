@@ -100,17 +100,17 @@
 }
 </style>
   
-  <script>
-    var playBtn = document.getElementById('play');
-var stopBtn = document.getElementById('stop');
+<script>
+var x = document.getElementById("myAudio"); 
 
-var playSound = function() {
-	audio.play();
-};
+function playAudio() { 
+  x.play(); 
+} 
 
-playBtn.addEventListener('click', playSound, false);
-stopBtn.addEventListener('click', function(){audio.pause()}, false);
-  </script>
+function pauseAudio() { 
+  x.pause(); 
+} 
+</script>
 
   <body>
   
@@ -121,13 +121,16 @@ stopBtn.addEventListener('click', function(){audio.pause()}, false);
     <div class="box">
       <div class="dream">
         
-          <h1>Audio Test</h1>
-    <p>Simple example</p>
-	<div>
-		<audio id="audio" src="http://www.sousound.com/music/healing/healing_01.mp3" preload="auto"  ></audio>
-		<button id="play">Play</button>
-		<button id="stop">Stop</button>
-	</div>
+         <audio id="myAudio">
+  <source src="horse.ogg" type="audio/ogg">
+  <source src="horse.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+
+<p>Click the buttons to play or pause the audio.</p>
+
+<button onclick="playAudio()" type="button">Play Audio</button>
+<button onclick="pauseAudio()" type="button">Pause Audio</button> 
         
           <iframe name="myIframe" src="target.html"></iframe>
         
