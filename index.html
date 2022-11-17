@@ -107,18 +107,23 @@
   <body>
 
    
+<audio id="myAudio">
+  <source src="https://www.sousound.com/music/healing/healing_01.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+
+      
 <script>
 var x = document.getElementById("myAudio"); 
 
 function playAudio() { 
   x.play(); 
 } 
+
+function pauseAudio() { 
+  x.pause(); 
+} 
 </script>
-    
-     <audio id="myAudio">
-  <source src="https://www.sousound.com/music/healing/healing_01.mp3" type="audio/mpeg">
-  Your browser does not support the audio element.
-</audio>
   
     <div class="container">
     <div class="heading">
@@ -130,7 +135,7 @@ function playAudio() {
 
 
         
-          <iframe name="myIframe" src="target.html" onload="playAudio()"></iframe>
+         <iframe name="myIframe" src="target.html" onload="playAudio()"></iframe>
         
           <a href="https://livekooora.online/" target="myIframe">
           <img src="qatar-AR.jpg">
