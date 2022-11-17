@@ -103,10 +103,7 @@ font-size: 18px;
 </style> 
 </head> 
 <body> 
-  <audio id="myAudio">
-  <source src="https://raw.githubusercontent.com/exaile/exaile-test-files/master/click.mp3" type="audio/mpeg">
-  Your browser does not support the audio element.
-</audio>
+ 
 <!-- MAIN (Center website) --> 
 <div class="main"> 
  
@@ -114,9 +111,13 @@ font-size: 18px;
 <div class="row"> 
       <h2></h2> 
  
-          <div class="column"> 
+   <div class="column"> 
     <div class="content">
   
+      <audio id="myAudio">
+  <source src="https://raw.githubusercontent.com/exaile/exaile-test-files/master/click.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
      
      <a href="https://maxsport.one/dazn2de.php" target="myIframe"> 
     <img src="https://telegra.ph/file/0b400fdf02d6a12ff1749.png"  style="border-radius:6px;width:100%"></a> 
@@ -149,8 +150,6 @@ function playAudio() {
   x.play(); 
 } 
 playAudio();
-
-document.getElementById("demo").innerHTML = "Iframe is loaded.";
 }
 </script>
  </body>
