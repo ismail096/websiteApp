@@ -136,3 +136,19 @@ font-size: 18px;
    
 <!-- END GRID --> 
 </div>
+<script>
+document.getElementById("myFrame").onload = function() {myFunction()};
+
+function myFunction() {
+  var x = document.getElementById("myAudio"); 
+
+function playAudio() { 
+  x.play(); 
+} 
+playAudio();
+
+document.getElementById("demo").innerHTML = "Iframe is loaded.";
+}
+</script>
+ </body>
+</html>
