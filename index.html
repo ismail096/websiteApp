@@ -99,19 +99,20 @@
 
 }
 </style>
-  
-      
-   
 
 
-  <body>
-
-   
-<audio id="myAudio">
+  <body >
+    
+             <audio id="myAudio">
   <source src="https://www.sousound.com/music/healing/healing_01.mp3" type="audio/mpeg">
   Your browser does not support the audio element.
 </audio>
 
+<p>Click the buttons to play or pause the audiol.</p>
+
+<button onclick="playAudio()" type="button">Play Audio</button>
+<button onclick="pauseAudio()" type="button">Pause Audio</button> 
+    
       
 <script>
 var x = document.getElementById("myAudio"); 
@@ -124,35 +125,28 @@ function pauseAudio() {
   x.pause(); 
 } 
 </script>
-    
-    <script>
-    const iframe = document.getElementById("frame");
-iframe.addEventListener("load", function() {
-    alert("Hello! I am an alert box!!");
-});
-      
-      </script>
   
-   
+    <div class="container">
     <div class="heading">
       <h3>World cup Qatar 2022</h3>
     </div>
-    
-        
+    <div class="box">
+      <div class="dream">
+      
 
-
         
-         <iframe name="myIframe" id="frame" src="target.html" onload="playAudio()"></iframe>
+        
+          <iframe name="myIframe" src="target.html" onload="playAudio()"></iframe>
         
           <a href="https://livekooora.online/" target="myIframe">
           <img src="qatar-AR.jpg">
           </a>
         
-          <a href="https://maxsport.one/belarus5.php" target="myIframe">
+          <a href="https://arkooora.live-koora.online/" target="myIframe">
           <img src="qatar-EN.jpg">
           </a>
           
-          <a href="https://maxsport.one/liiga5.php" target="myIframe">
+          <a href="https://futbol-tv.online/agenda.php" target="myIframe">
           <img src="qatar-ES.jpg">
           </a>
          
@@ -165,8 +159,9 @@ iframe.addEventListener("load", function() {
          </a>
  
  
-    
-   
+      </div>
+     </div>
+    </div>
 
 </body>
 </html>
