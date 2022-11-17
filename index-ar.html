@@ -106,6 +106,8 @@ font-size: 18px;
  
 <!-- MAIN (Center website) --> 
 <div class="main"> 
+
+   
  
 <!-- Portfolio Gallery Grid --> 
 <div class="row"> 
@@ -119,16 +121,12 @@ font-size: 18px;
   Your browser does not support the audio element.
 </audio>
      
-     <a href="https://maxsport.one/dazn2de.php" target="myIframe"> 
-    <img src="https://telegra.ph/file/0b400fdf02d6a12ff1749.png"  style="border-radius:6px;width:100%"></a> 
+    <img src="https://telegra.ph/file/0b400fdf02d6a12ff1749.png"  style="border-radius:6px;width:100%" onclick="displayIframe()" ></a> 
     </div> 
   </div> 
+  
+  <div id="iframeDisplay"></div> 
  
-  <div class="column"> 
-    <div class="content">
-    <iframe name="myIframe" id="myFrame" src="" style="border-radius:6px;width:100%" ></iframe>
-    </div> 
-  </div> 
  
  
          
@@ -141,10 +139,7 @@ font-size: 18px;
 <!-- END GRID --> 
 </div>
 <script>
-document.getElementById("myFrame").onload = function() 
-{
- myFunction()
-};
+
 
 function myFunction() 
  {
@@ -155,6 +150,13 @@ function myFunction()
    } 
     playAudio();
  }
+ 
+function displayIframe() {
+        document.getElementById("iframeDisplay").innerHTML = "<iframe src=\"https://maxsport.one/dazn2de.php\" height=\"200\" width=\"300\" ></iframe>";
+        setTimeout(function() { myFunction(); }, 3000);
+
+    }
 </script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
  </body>
 </html>
