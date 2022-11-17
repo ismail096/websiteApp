@@ -100,10 +100,17 @@
 }
 </style>
   <script>
- let elements = document.getElementsByTagName('a');
+    
+    function foo()
+{
+   let elements = document.getElementsByTagName('a');
 for (let i = 0; i < elements.length; i++) {
     elements[i].target = '_self';
 }
+   alert("Hello World");
+}
+    
+
 </script>
 
 <body>
@@ -116,7 +123,7 @@ for (let i = 0; i < elements.length; i++) {
       <div class="dream">
         
         
-       <iframe name="iframe1" src="target.html"></iframe>
+       <iframe name="iframe1" src="target.html" onload="foo()" ></iframe>
         
         
           <a href="https://livekooora.online/" target="iframe1">
