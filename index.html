@@ -102,24 +102,12 @@
 
 
   <body>
-    
-             <audio id="myAudio">
-  <source src="https://www.sousound.com/music/healing/healing_01.mp3" type="audio/mpeg">
-  Your browser does not support the audio element.
-</audio>
-
-
-    
-      
+   
 <script>
 var x = document.getElementById("myAudio"); 
 
 function playAudio() { 
   x.play(); 
-} 
-
-function pauseAudio() { 
-  x.pause(); 
 } 
 </script>
   
@@ -130,6 +118,10 @@ function pauseAudio() {
     <div class="box">
       <div class="dream">
         
+ <audio id="myAudio">
+  <source src="https://www.sousound.com/music/healing/healing_01.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
 
         
           <iframe name="myIframe" src="target.html" onload="playAudio()"></iframe>
