@@ -99,6 +99,18 @@
 
 }
 </style>
+  
+  <script>
+    var playBtn = document.getElementById('play');
+var stopBtn = document.getElementById('stop');
+
+var playSound = function() {
+	audio.play();
+};
+
+playBtn.addEventListener('click', playSound, false);
+stopBtn.addEventListener('click', function(){audio.pause()}, false);
+  </script>>
 
   <body>
   
@@ -109,24 +121,33 @@
     <div class="box">
       <div class="dream">
         
+          <h1>Audio Test</h1>
+    <p>Simple example</p>
+	<div>
+		<audio id="audio" src="http://www.sousound.com/music/healing/healing_01.mp3" preload="auto"  ></audio>
+		<button id="play">Play</button>
+		<button id="stop">Stop</button>
+	</div>
         
-          <a href="https://livekooora.online/" >
+          <iframe name="myIframe" src="target.html"></iframe>
+        
+          <a href="https://livekooora.online/" target="myIframe">
           <img src="qatar-AR.jpg">
           </a>
         
-          <a href="https://arkooora.live-koora.online/" >
+          <a href="https://arkooora.live-koora.online/" target="myIframe">
           <img src="qatar-EN.jpg">
           </a>
           
-          <a href="https://futbol-tv.online/agenda.php" >
+          <a href="https://futbol-tv.online/agenda.php" target="myIframe">
           <img src="qatar-ES.jpg">
           </a>
          
-          <a href="https://futboltv.live/es/" >
+          <a href="https://futboltv.live/es/" target="myIframe">
           <img src="qatar-FR.jpg">
           </a>
          
-         <a href="https://futboltv.live/es/" >
+         <a href="https://futboltv.live/es/" target="myIframe">
          <img src="qatar-PT.jpg">
          </a>
  
