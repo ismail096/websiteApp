@@ -113,6 +113,16 @@ function pauseAudio() {
 </script>
 
   <body>
+    
+             <audio id="myAudio">
+  <source src="http://www.sousound.com/music/healing/healing_01.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+
+<p>Click the buttons to play or pause the audiog.</p>
+
+<button onclick="playAudio()" type="button">Play Audio</button>
+<button onclick="pauseAudio()" type="button">Pause Audio</button> 
   
     <div class="container">
     <div class="heading">
@@ -121,15 +131,7 @@ function pauseAudio() {
     <div class="box">
       <div class="dream">
         
-         <audio id="myAudio">
-  <source src="http://www.sousound.com/music/healing/healing_01.mp3" type="audio/mpeg">
-  Your browser does not support the audio element.
-</audio>
 
-<p>Click the buttons to play or pause the audios.</p>
-
-<button onclick="playAudio()" type="button">Play Audio</button>
-<button onclick="pauseAudio()" type="button">Pause Audio</button> 
         
           <iframe name="myIframe" src="target.html"></iframe>
         
