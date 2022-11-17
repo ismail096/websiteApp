@@ -1,6 +1,17 @@
 
 <!DOCTYPE html>
 <html>
+  <head>
+		<script src='https://surikov.github.io/webaudiofont/npm/dist/WebAudioFontPlayer.js'></script>
+		<script src='https://surikov.github.io/webaudiofontdata/sound/0000_JCLive_sf2_file.js'></script>
+		<script>
+			var selectedPreset=_tone_0000_JCLive_sf2_file;
+			var AudioContextFunc = window.AudioContext || window.webkitAudioContext;
+			var audioContext = new AudioContextFunc();
+			var player=new WebAudioFontPlayer();
+			player.loader.decodeAfterLoading(audioContext, '_tone_0000_JCLive_sf2_file');
+		</script>
+	</head>
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
@@ -137,7 +148,8 @@
          
     
          
-       
+       		<p><a href="#" onmousedown="player.queueWaveTable(audioContext, audioContext.destination, selectedPreset, 0, 55, 3.5);">Play a note</a></p>
+
          
             
       </div>
