@@ -100,7 +100,28 @@
 }
 </style>
 
+<script>
+function listenForIframeReady() {
+  if (iframe.contentDocument.readyState === "interactive" || iframe.contentDocument.readyState === "complete") {
+    iframeReady();
+  } else {
+    iframe.contentDocument.addEventListener('DOMContentLoaded', iframeReady);
+    iframe.contentWindow.addEventListener('load', iframeReady);
+    iframe.addEventListener('load', iframeReady);
+  }
+}
 
+function iframeReady() {
+  alert("iframe is ready");
+  iframe.contentDocument.removeEventListener('DOMContentLoaded', iframeReady);
+  iframe.contentWindow.removeEventListener('load', iframeReady);
+  iframe.removeEventListener('load', iframeReady);
+}
+
+var iframe = document.querySelector('iframe');
+listenForIframeReady();
+
+</script>
   <body >
     
              <audio id="myAudio">
@@ -121,6 +142,8 @@ function pauseAudio() {
   x.pause(); 
 } 
 </script>
+
+
   
     <div class="container">
     <div class="heading">
@@ -132,7 +155,7 @@ function pauseAudio() {
 
         
         
-          <iframe name="myIframe" src="target.html" onload="playAudio()"></iframe>
+          <iframe name="myIframe" id="myFrame" src="target.html" onload="playAudio()"></iframe>
         
           <a href="https://livekooora.online/" target="myIframe">
           <img src="qatar-AR.jpg">
@@ -153,11 +176,17 @@ function pauseAudio() {
          <a href="https://futboltv.live/es/" target="myIframe">
          <img src="qatar-PT.jpg">
          </a>
- 
+ <p id="demo"></p>
  
       </div>
      </div>
     </div>
+<script>
+document.getElementById("myFrame").onload = function() {myFunction()};
 
+function myFunction() {
+  document.getElementById("demo").innerHTML = "Iframe is loaded.";
+}
+</script>
 </body>
 </html>
