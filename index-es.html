@@ -111,28 +111,46 @@ font-size: 18px;
 <div class="row"> 
       <h2></h2> 
  
-          <div class="column"> 
-    <div class="content"><a href="go:pr1"> 
-    <img src="https://telegra.ph/file/c5614b345060a848533b6.jpg"  style="border-radius:6px;width:100%"></a> 
+   <div class="column"> 
+    <div class="content">
+  
+      <audio id="myAudio">
+  <source src="https://raw.githubusercontent.com/exaile/exaile-test-files/master/click.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+     
+     <a href="https://maxsport.one/dazn2de.php" target="myIframe"> 
+    <img src="https://telegra.ph/file/0b400fdf02d6a12ff1749.png"  style="border-radius:6px;width:100%"></a> 
     </div> 
   </div> 
  
-          <div class="column"> 
-    <div class="content"><a href="go:pr2"> 
-    <img src="https://telegra.ph/file/b7ee0ff69306c023bf49f.jpg"  style="border-radius:6px;width:100%"></a> 
-    </div> 
-  </div> 
-   
-            <div class="column"> 
-    <div class="content"><a href="go:pr3"> 
-    <img src="https://telegra.ph/file/f1b24b565b11628a6c6e8.jpg"  style="border-radius:6px;width:100%"></a> 
+  <div class="column"> 
+    <div class="content">
+    <iframe name="myIframe" id="myFrame" src="" style="border-radius:6px;width:100%" ></iframe>
     </div> 
   </div> 
  
-       
+ 
+         
+ 
+ 
  
  
  
    
 <!-- END GRID --> 
 </div>
+<script>
+document.getElementById("myFrame").onload = function() {myFunction()};
+
+function myFunction() {
+  var x = document.getElementById("myAudio"); 
+
+function playAudio() { 
+  x.play(); 
+} 
+playAudio();
+}
+</script>
+ </body>
+</html>
