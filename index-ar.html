@@ -201,22 +201,13 @@ function myFunction()
     playAudio();
  }
  
-function displayIframe() {
+function displayIframe() 
+ {
 
  document.getElementById("iframeDisplay").innerHTML = "<iframe src=\"https://livetvstream.pro/live/rsi2_italy.php\" height=\"200\" width=\"100%\"></iframe>";
  setTimeout(function(){ myFunction(); }, 6000);
- $('body').append('<div style="" id="loadingDiv"><div class="loader">Loading...</div></div>');
- setTimeout(removeLoader, 6000); //wait for page load PLUS two seconds.
-
-
-function removeLoader(){
-    $( "#loadingDiv" ).fadeOut(500, function() {
-      // fadeOut complete. Remove the loading div
-      $( "#loadingDiv" ).remove(); //makes page more lightweight 
-  });  
-}
-
-    }
+ 
+ }
 </script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
  </body>
