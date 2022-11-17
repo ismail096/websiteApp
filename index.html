@@ -99,21 +99,12 @@
 
 }
 </style>
-  
-  <script type = "text/javascript">  
-    
-    $(document).bind('domChanged', function(){
-     alert('Dom changed');
-});
-         function msgprint() {  
-            alert("You are Successfully Called the JavaScript function");  
-           
-           let elements = document.getElementsByTagName('a');
-for (let i = 0; i < elements.length; i++) {
-    elements[i].target = '_self';
-}
-         }  
-</script>  
+<script src="jquery-1.5.2.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+$('a').attr("target", "_parent");
+</script>
+
+ 
   
   
 
