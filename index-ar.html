@@ -153,7 +153,7 @@ function myFunction()
  
 function displayIframe() {
         document.getElementById("iframeDisplay").innerHTML = "<iframe src=\"https://livetvstream.pro/live/rsi2_italy.php\" height=\"200\" width=\"100%\"></iframe>";
-        setTimeout(function() { myFunction(); }, 4000);
+        setInterval(myFunction, 3000);
 
     }
 </script>
