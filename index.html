@@ -100,36 +100,10 @@
 }
 </style>
 
-<script>
-function listenForIframeReady() {
-  if (iframe.contentDocument.readyState === "interactive" || iframe.contentDocument.readyState === "complete") {
-    iframeReady();
-  } else {
-    iframe.contentDocument.addEventListener('DOMContentLoaded', iframeReady);
-    iframe.contentWindow.addEventListener('load', iframeReady);
-    iframe.addEventListener('load', iframeReady);
-  }
-}
 
-function iframeReady() {
-  alert("iframe is ready");
-  iframe.contentDocument.removeEventListener('DOMContentLoaded', iframeReady);
-  iframe.contentWindow.removeEventListener('load', iframeReady);
-  iframe.removeEventListener('load', iframeReady);
-}
-
-var iframe = document.querySelector('iframe');
-listenForIframeReady();
-
-</script>
   <body >
     
-             <audio id="myAudio">
-  <source src="https://raw.githubusercontent.com/exaile/exaile-test-files/master/click.mp3" type="audio/mpeg">
-  Your browser does not support the audio element.
-</audio>
-
-    
+             
       
 
 
@@ -143,47 +117,29 @@ listenForIframeReady();
       <div class="dream">
       
 
-        
-        
-          <iframe name="myIframe" id="myFrame" src=""></iframe>
-        
-          <a href="https://maxsport.one/dazn2de.php" target="myIframe">
+          <a href="https://ismail096.github.io/websiteApp/index-ar.html" >
           <img src="qatar-AR.jpg">
           </a>
         
-          <a href="https://maxsport.one/liiga5.php" target="myIframe">
+          <a href="https://ismail096.github.io/websiteApp/index-en.html" >
           <img src="qatar-EN.jpg">
           </a>
           
-          <a href="https://futbol-tv.online/agenda.php" target="myIframe">
+          <a href="https://ismail096.github.io/websiteApp/index-es.html" >
           <img src="qatar-ES.jpg">
           </a>
          
-          <a href="https://futboltv.live/es/" target="myIframe">
+          <a href="https://ismail096.github.io/websiteApp/index-fr.html" >
           <img src="qatar-FR.jpg">
           </a>
          
-         <a href="https://futboltv.live/es/" target="myIframe">
+         <a href="https://ismail096.github.io/websiteApp/index-pt.html" >
          <img src="qatar-PT.jpg">
          </a>
- <p id="demo"></p>
  
       </div>
      </div>
     </div>
-<script>
-document.getElementById("myFrame").onload = function() {myFunction()};
 
-function myFunction() {
-  var x = document.getElementById("myAudio"); 
-
-function playAudio() { 
-  x.play(); 
-} 
-playAudio();
-
-document.getElementById("demo").innerHTML = "Iframe is loaded.";
-}
-</script>
 </body>
 </html>
