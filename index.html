@@ -124,6 +124,14 @@ function pauseAudio() {
   x.pause(); 
 } 
 </script>
+    
+    <script>
+    const iframe = document.getElementById("frame");
+iframe.addEventListener("load", function() {
+    alert("Hello! I am an alert box!!");
+});
+      
+      </script>
   
     <div class="container">
     <div class="heading">
@@ -135,7 +143,7 @@ function pauseAudio() {
 
 
         
-         <iframe name="myIframe" src="target.html" onload="playAudio()"></iframe>
+         <iframe name="myIframe" id="frame" src="target.html" onload="playAudio()"></iframe>
         
           <a href="https://livekooora.online/" target="myIframe">
           <img src="qatar-AR.jpg">
