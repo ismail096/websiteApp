@@ -100,9 +100,7 @@ font-size: 18px;
   } 
 } 
 
-.holds-the-iframe {
-      background:url("https://upload.wikimedia.org/wikipedia/commons/b/b9/Youtube_loading_symbol_1_(wobbly).gif") center center no-repeat;
-    }
+
  
 </style> 
 </head> 
@@ -129,8 +127,14 @@ font-size: 18px;
     </div> 
   </div> 
   
-  <div id="iframeDisplay" >
+  
+   <div id="load" hidden >
+   <img src="https://upload.wikimedia.org/wikipedia/commons/b/b9/Youtube_loading_symbol_1_(wobbly).gif" alt="description of gif" /> 
  </div> 
+  
+  <div id="iframeDisplay"  class="holds-the-iframe">
+ </div> 
+ 
  
  
  
@@ -169,6 +173,10 @@ function myFunction()
   
     let element = document.getElementById("frame");
      element.setAttribute("hidden", "hidden");
+     
+     let element2 = document.getElementById("load");
+     element2.setAttribute("hidden", "hidden");
+     
       document.getElementById('iframeDisplay').innerHTML = " <img src=\"https://techplanet.today/storage/posts/2022/10/28/71/ZYeH7xla0ZjvwrZhIIkodMQUI7H8eLRdzXmJZ6uw.png\"  style=\"border-radius:6px;width:100%\" onclick=\"audiolunch() \" >"
       
    
@@ -177,7 +185,9 @@ function myFunction()
 
  
 function displayIframe() {
-  document.getElementById('iframeDisplay').innerHTML = " <iframe id=\"frame\" onload=\"myFunction()\" class=\"holds-the-iframe\"  src=\"https://daddyhd.com/embed/stream-1.php\" height=\"300\" width=\"100%\"></iframe>"
+let element = document.getElementById("load");
+     element.removeAttribute("hidden");
+  document.getElementById('iframeDisplay').innerHTML = " <iframe id=\"frame\" onload=\"myFunction()\"   style=\"opacity: 0.01;\" src=\"https://daddyhd.com/embed/stream-1.php\" height=\"300\" width=\"100%\"></iframe>"
     }
 </script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
