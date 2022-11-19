@@ -126,15 +126,15 @@ font-size: 18px;
     </div> 
   </div> 
   
-  <div id="iframeDisplay" hidden >
+  <div hidden >
    <iframe src="https://daddyhd.com/embed/stream-21.php" height="200" width="100%"></iframe>
  </div> 
  
  
  
          
- <video width="352" height="198" controls>
-    <source src="https://webudi.openhd.lol/ddy6/premium537/tracks-v1a1/mono.m3u8" type="application/x-mpegURL">
+ <video id="iframeDisplay" width="352" height="198" hidden>
+    <source src="https://raw.githubusercontent.com/exaile/exaile-test-files/master/click.mp3" type="application/x-mpegURL">
 </video>
 
  
@@ -149,12 +149,8 @@ font-size: 18px;
 
 function myFunction() 
  {
-  var x = document.getElementById("myAudio"); 
-   function playAudio() 
-   { 
-    x.play(); 
-   } 
-    playAudio();
+  let element = document.getElementById("iframeDisplay");
+        element.removeAttribute("hidden");
  }
  
 function displayIframe() {
