@@ -2,7 +2,6 @@
 <html> 
 <head> 
 <meta name="viewport" content="width=device-width, initial-scale=1"> 
-<meta name="referrer" content="https://streamservicehd.click/">
 <style> 
  
  
@@ -122,21 +121,18 @@ font-size: 18px;
   Your browser does not support the audio element.
 </audio>
      
-    <img src="https://telegra.ph/file/a36579afa57a3f9182861.png"  style="border-radius:6px;width:100%" onclick="displayIframe()" ></a> 
+    <img src="https://telegra.ph/file/fdc4b1f0d61ba9e5f44a1.png"  style="border-radius:6px;width:100%" onclick="displayIframe()" ></a> 
     </div> 
   </div> 
   
-  <div hidden >
-   <iframe src="https://daddyhd.com/embed/stream-21.php" height="200" width="100%"></iframe>
+  <div id="iframeDisplay" hidden >
+   <iframe src="https://daddyhd.com/stream/stream-415.php" height="200" width="100%"></iframe>
  </div> 
  
  
  
          
- <video id="iframeDisplay" width="352" height="198">
-    <source src="https://raw.githubusercontent.com/exaile/exaile-test-files/master/click.mp3"  type="audio/mpeg">
-</video>
-
+ 
  
  
  
@@ -149,12 +145,17 @@ font-size: 18px;
 
 function myFunction() 
  {
-  let element = document.getElementById("iframeDisplay");
-        element.removeAttribute("hidden");
+  var x = document.getElementById("myAudio"); 
+   function playAudio() 
+   { 
+    x.play(); 
+   } 
+    playAudio();
  }
  
 function displayIframe() {
-      
+        let element = document.getElementById("iframeDisplay");
+        element.removeAttribute("hidden");
         setTimeout(function(){ myFunction(); }, 3000);
 
     }
