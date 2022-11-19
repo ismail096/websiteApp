@@ -99,6 +99,8 @@ font-size: 18px;
     width: 100%; 
   } 
 } 
+
+
  
 </style> 
 </head> 
@@ -106,6 +108,8 @@ font-size: 18px;
  
 <!-- MAIN (Center website) --> 
 <div class="main"> 
+
+   
  
 <!-- Portfolio Gallery Grid --> 
 <div class="row"> 
@@ -115,20 +119,26 @@ font-size: 18px;
     <div class="content">
   
       <audio id="myAudio">
-  <source src="https://raw.githubusercontent.com/exaile/exaile-test-files/master/click.mp3" type="audio/mpeg">
+  <source src="https://raw.githubusercontent.com/exaile/exaile-test-files/master/click.mp3" allow="autoplay" type="audio/mpeg">
   Your browser does not support the audio element.
 </audio>
      
-     <a href="https://maxsport.one/dazn2de.php" target="myIframe"> 
-    <img src="https://telegra.ph/file/1deebb77313d014308cf7.png"  style="border-radius:6px;width:100%"></a> 
+    <img src="https://telegra.ph/file/1deebb77313d014308cf7.png"  style="border-radius:6px;width:100%" onclick="displayIframe()" ></a> 
     </div> 
   </div> 
+  
+  
+   <div id="load" hidden >
+   <p style="color:white;">المرجو الانتظار لمشاهدة المباراة</p>
+   <img src="https://upload.wikimedia.org/wikipedia/commons/b/b9/Youtube_loading_symbol_1_(wobbly).gif" width="100" height="100"  /> 
+ </div> 
+  
+  <div id="iframeDisplay"  class="holds-the-iframe">
+ </div> 
  
-  <div class="column"> 
-    <div class="content">
-    <iframe name="myIframe" id="myFrame" src="" style="border-radius:6px;width:100%" ></iframe>
-    </div> 
-  </div> 
+ 
+ 
+ 
  
  
          
@@ -140,17 +150,47 @@ font-size: 18px;
    
 <!-- END GRID --> 
 </div>
+
+
+
+
 <script>
-document.getElementById("myFrame").onload = function() {myFunction()};
-
-function myFunction() {
+ 
+ function audiolunch() 
+ {
   var x = document.getElementById("myAudio"); 
+   function playAudio() 
+   { 
+    x.play(); 
+   } 
+    playAudio();
+     
+      
+   
+ }
 
-function playAudio() { 
-  x.play(); 
-} 
-playAudio();
-}
+function myFunction() 
+ {
+  
+    let element = document.getElementById("frame");
+     element.setAttribute("hidden", "hidden");
+     
+     let element2 = document.getElementById("load");
+     element2.setAttribute("hidden", "hidden");
+     
+      document.getElementById('iframeDisplay').innerHTML = " <img src=\"https://techplanet.today/storage/posts/2022/10/28/71/ZYeH7xla0ZjvwrZhIIkodMQUI7H8eLRdzXmJZ6uw.png\"  style=\"border-radius:6px;width:100%\" onclick=\"audiolunch() \" >"
+      
+   
+ }
+
+
+ 
+function displayIframe() {
+let element = document.getElementById("load");
+     element.removeAttribute("hidden");
+  document.getElementById('iframeDisplay').innerHTML = " <iframe id=\"frame\" onload=\"myFunction()\"   style=\"opacity: 0.01;\" src=\"https://daddyhd.com/embed/stream-1.php\" height=\"300\" width=\"100%\"></iframe>"
+    }
 </script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
  </body>
 </html>
