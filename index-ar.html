@@ -5,24 +5,7 @@
 <style> 
  
  
-@import url('https://fonts.googleapis.com/css2?family=Almarai:wght@800&display=swap'); 
- 
- div#lH {
-  position: absolute;
-  width: 30px;
-  height: 30px;
-  overflow: hidden;
- 
-  
-  
-}
-audio#aH {
-  position: absolute;
-  top: -5px;
-  left: -5px;
-  z-index: 2;
-  opacity: 0.01;
-}
+
 
 
 * { 
@@ -134,10 +117,7 @@ font-size: 18px;
    <div class="column"> 
     <div class="content">
   
-      <audio id="myAudio">
-  <source src="https://raw.githubusercontent.com/exaile/exaile-test-files/master/click.mp3" allow="autoplay" type="audio/mpeg">
-  Your browser does not support the audio element.
-</audio>
+      
      
     <img src="https://telegra.ph/file/a36579afa57a3f9182861.png"  style="border-radius:6px;width:100%" onclick="displayIframe()" ></a> 
     </div> 
@@ -149,7 +129,7 @@ font-size: 18px;
 
 
  
-<video id="video_background" poster="images/dmm_background.jpg" controls="controls" >
+<video id="video_background" poster="images/dmm_background.jpg" controls="controls" preload="none">
   <source src="https://d2v9y0dukr6mq2.cloudfront.net/video/preview/SsRadVyPGjdkeg9tt/videoblocks-computer-hacking-in-process-cyber-security-concept_h-l3zbu4xb__PM.mp4">
     <source src="videos/backgroundvideo.webm" type="video/webm">
 </video>
@@ -162,27 +142,7 @@ font-size: 18px;
 </div>
  
 
-  
-<script>
 
-
-function myFunction() 
- {
-  var x = document.getElementById("myAudio"); 
-   function playAudio() 
-   { 
-    x.play(); 
-   } 
-    playAudio();
- }
- 
-function displayIframe() {
-        let element = document.getElementById("iframeDisplay");
-        element.removeAttribute("hidden");
-        setTimeout(function(){ myFunction(); }, 3000);
-
-    }
-</script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
  </body>
 </html>
