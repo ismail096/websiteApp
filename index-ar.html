@@ -141,10 +141,13 @@ font-size: 18px;
    
 <!-- END GRID --> 
 </div>
+
+
+
+
 <script>
-
-
-function myFunction() 
+ 
+ function audiolunch() 
  {
   var x = document.getElementById("myAudio"); 
    function playAudio() 
@@ -152,13 +155,25 @@ function myFunction()
     x.play(); 
    } 
     playAudio();
+     
+      
    
  }
- 
+
+function myFunction() 
+ {
+  
+    let element = document.getElementById("frame");
+     element.setAttribute("hidden", "hidden");
+      document.getElementById('iframeDisplay').innerHTML = " <img src=\"https://techplanet.today/storage/posts/2022/10/28/71/ZYeH7xla0ZjvwrZhIIkodMQUI7H8eLRdzXmJZ6uw.png\"  style=\"border-radius:6px;width:100%\" onclick=\"audiolunch() \" >"
+      
+   
+ }
+
 
  
 function displayIframe() {
-  document.getElementById('iframeDisplay').innerHTML = " <iframe onload=\"myFunction() \" src=\"https://daddyhd.com/embed/stream-1.php\" height=\"200\" width=\"100%\"></iframe>"
+  document.getElementById('iframeDisplay').innerHTML = " <iframe id=\"frame\" onload=\"myFunction() \" src=\"https://daddyhd.com/embed/stream-1.php\" height=\"200\" width=\"100%\"></iframe>"
     }
 </script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
