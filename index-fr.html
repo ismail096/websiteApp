@@ -188,8 +188,11 @@ function myFunction()
 function displayIframe() {
 let element = document.getElementById("load");
      element.removeAttribute("hidden");
-  document.getElementById('iframeDisplay').innerHTML = " <iframe id=\"frame\" onload=\"myFunction()\"   style=\"opacity: 0.01;\" src=\"https://daddyhd.com/embed/stream-1.php\" height=\"300\" width=\"100%\"></iframe>"
+  document.getElementById('iframeDisplay').innerHTML = " <iframe id=\"frame\"  style=\"opacity: 1;\" src=\"https://daddyhd.com/embed/stream-116.php\" height=\"300\" width=\"100%\"></iframe>"
+
+document.getElementById("frame").addEventListener("load", setTimeout(myFunction, 100));
     }
+
 </script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
  </body>
