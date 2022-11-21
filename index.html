@@ -1,145 +1,322 @@
-
-<!DOCTYPE html>
-<html>
-<style>
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
-
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
-}
-
-.container{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  margin: 40px 20px 0 20px;
-}
-
-.container .heading{
-  width: 50%;
-  padding-bottom: 50px;
-}
-.container .heading h3{
-  font-size: 3em;
-  font-weight: bolder;
-  padding-bottom: 10px;
-  border-bottom: 3px solid #222;
-}
-
-.container .heading h3 span{
-  font-weight: 100;
-}
-.container .box{
- display: flex;
- flex-direction: row;
- justify-content: space-between;
-}
-
-.container .box .dream{
-  display: flex;
-  flex-direction: column;
-  width: 32.5%;
-}
-
-.container .box .dream img{
-  width: 100%;
-  padding-bottom: 15px;
-  border-radius: 5px;
-}
-
-.container .btn{
-  margin: 40px 0 70px 0;
-  background: #222;
-  padding: 15px 40px ;
-  border-radius: 5px;
-}
-
-.container .btn a{
- color: #fff;
- font-size: 1.2em;
- text-decoration: none;
- font-weight: bolder;
- letter-spacing: 3px;
-}
-
-@media only screen and (max-width: 1769px){
-    .container .box{
-   flex-direction: column;
-  }
-
-.container .box .dream{
-  width: 100%;
-}
-
-
-
-
-
-}
-
-@media only screen and (max-width: 1643px){
-.container .heading{
-  width: 100%;
-}
-.container .heading h3{
-  font-size: 1em;
-
-}
-
-
-
-
-
-
-
-}
-</style>
-
-
-  <body >
-    
-             
-      
-
-
-
-  
-    <div class="container">
-    <div class="heading">
-      <h3>World cup Qatar 2022</h3>
-    </div>
-    <div class="box">
-      <div class="dream">
-      
-
-          <a href="https://ismail096.github.io/websiteApp/index-ar.html" >
-          <img src="qatar-AR.jpg">
-          </a>
-        
-          <a href="https://ismail096.github.io/websiteApp/index-en.html" >
-          <img src="qatar-EN.jpg">
-          </a>
-          
-          <a href="https://ismail096.github.io/websiteApp/index-es.html" >
-          <img src="qatar-ES.jpg">
-          </a>
-         
-          <a href="https://ismail096.github.io/websiteApp/index-fr.html" >
-          <img src="qatar-FR.jpg">
-          </a>
-         
-         <a href="https://ismail096.github.io/websiteApp/index-pt.html" >
-         <img src="qatar-PT.jpg">
-         </a>
+<!DOCTYPE html> 
+<html> 
+<head> 
+<meta name="viewport" content="width=device-width, initial-scale=1"> 
+<style> 
  
-      </div>
-     </div>
-    </div>
+ 
+@import url('https://fonts.googleapis.com/css2?family=Almarai:wght@800&display=swap'); 
+ 
+* { 
+  box-sizing: border-box; 
+} 
+ 
+.topleft { 
+    position: absolute; 
+    bottom: 37px; 
+    right: 2px; 
+    font-size: 15px; 
+    background: #000000a1; 
+    padding: 6px; 
+    color: #FFFFFF; 
+    BORDER-RADIUS: 10px 0 6px 0; 
+} 
+ 
+ 
+body { 
+  background-color: #151515; 
+  padding: 0px 10px 0px 10px; 
+  font-family: 'Almarai', sans-serif; 
+  text-align: center; 
+} 
+ 
+/* Center website */ 
+.main { 
+  max-width: 1280px; 
+  margin: auto; 
+} 
+ 
+h3 { 
+font-size: 16px; 
+    margin-block-start: 0.4em; 
+    margin-block-end: 0.4em; 
+    margin-inline-start: 0px; 
+    margin-inline-end: 0px;     
+} 
+ 
+h2 { 
+color: #d5ffc4; 
+font-size: 18px; 
+    margin-block-start: 0.4em; 
+    margin-block-end: 0.4em; 
+    margin-inline-start: 0px; 
+    margin-inline-end: 0px;     
+} 
+ 
+.row { 
+  margin: -7px -18px; 
+} 
+ 
+/* Add padding BETWEEN each column */ 
+.row, 
+.row > .column { 
+  padding: 4px; 
+} 
+ 
+/* Create four equal columns that floats next to each other */ 
+.column { 
+  float: right; 
+  width: 20%; 
+} 
+ 
+/* Clear floats after rows */  
+.row:after { 
+  content: ""; 
+  display: table; 
+  clear: both; 
+} 
+ 
+/* Content */ 
+.content { 
+  background-color: #4c4c4c; 
+  padding: 2px; 
+  border-radius: 8px; 
+    position: relative; 
+ 
+} 
+ 
+ 
+/* Responsive layout TV */ 
+@media screen and (max-width: 1920px) { 
+  .column { 
+    width: 50%; 
+  } 
+} 
+ 
+/* Responsive layout Mobile */ 
+@media screen and (max-width: 600px) { 
+  .column { 
+    width: 100%; 
+  } 
+} 
 
-</body>
+
+ 
+</style> 
+</head> 
+<body> 
+ 
+<!-- MAIN (Center website) --> 
+<div class="main"> 
+
+   
+ 
+<!-- Portfolio Gallery Grid --> 
+<div class="row"> 
+      <h2></h2> 
+ 
+   <div > 
+    <div >
+  
+      <audio id="myAudio">
+  <source src="https://raw.githubusercontent.com/exaile/exaile-test-files/master/click.mp3" allow="autoplay" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+     
+    <img src="https://assets.bein.com/mena/sites/4/2015/06/beIN_SPORTS_MAX1_DIGITAL_Mono.png"  style="border-radius:6px;width:100%" onclick="displayIframe()" ></a> 
+    </div> 
+  </div> 
+  
+  
+   <div id="load" hidden >
+   <p style="color:white;">المرجو الانتظار لمشاهدة المباراة</p>
+   <img src="https://upload.wikimedia.org/wikipedia/commons/b/b9/Youtube_loading_symbol_1_(wobbly).gif" width="100" height="100"  /> 
+ </div> 
+  
+  <div id="iframeDisplay"  class="holds-the-iframe">
+ </div> 
+ 
+ 
+ 
+ <img src="https://assets.bein.com/mena/sites/4/2015/06/beIN_SPORTS_MAX2_DIGITAL_Mono.png"  style="border-radius:6px;width:100%" onclick="displayIframe2()" ></a> 
+    </div> 
+  </div> 
+  
+  
+   <div id="load2" hidden >
+   <p style="color:white;">المرجو الانتظار لمشاهدة المباراة</p>
+   <img src="https://upload.wikimedia.org/wikipedia/commons/b/b9/Youtube_loading_symbol_1_(wobbly).gif" width="100" height="100"  /> 
+ </div> 
+  
+  <div id="iframeDisplay2"  class="holds-the-iframe">
+ </div> 
+ 
+ 
+ 
+ 
+  <img src="https://assets.bein.com/mena/sites/4/2015/06/beIN_SPORTS_MAX3_DIGITAL_Mono.png"  style="border-radius:6px;width:100%" onclick="displayIframe3()" ></a> 
+    </div> 
+  </div> 
+  
+  
+   <div id="load3" hidden >
+   <p style="color:white;">المرجو الانتظار لمشاهدة المباراة</p>
+   <img src="https://upload.wikimedia.org/wikipedia/commons/b/b9/Youtube_loading_symbol_1_(wobbly).gif" width="100" height="100"  /> 
+ </div> 
+  
+  <div id="iframeDisplay3"  class="holds-the-iframe">
+ </div> 
+ 
+ 
+ 
+ 
+ 
+   <img src="https://assets.bein.com/mena/sites/4/2015/06/beIN_SPORTS_MAX4_DIGITAL_Mono.png"  style="border-radius:6px;width:100%" onclick="displayIframe4()" ></a> 
+    </div> 
+  </div> 
+  
+  
+   <div id="load4" hidden >
+   <p style="color:white;">المرجو الانتظار لمشاهدة المباراة</p>
+   <img src="https://upload.wikimedia.org/wikipedia/commons/b/b9/Youtube_loading_symbol_1_(wobbly).gif" width="100" height="100"  /> 
+ </div> 
+  
+  <div id="iframeDisplay4"  class="holds-the-iframe">
+ </div> 
+ 
+ 
+ 
+ 
+ 
+ 
+         
+ 
+ 
+ 
+ 
+ 
+   
+<!-- END GRID --> 
+</div>
+
+
+
+
+<script>
+ 
+ function audiolunch() 
+ {
+  var x = document.getElementById("myAudio"); 
+   function playAudio() 
+   { 
+    x.play(); 
+   } 
+    playAudio();
+     
+      
+   
+ }
+
+function myFunction() 
+ {
+  
+    let element = document.getElementById("frame");
+     element.setAttribute("hidden", "hidden");
+     
+     let element2 = document.getElementById("load");
+     element2.setAttribute("hidden", "hidden");
+     
+      document.getElementById('iframeDisplay').innerHTML = " <img src=\"https://telegra.ph/file/e96430a7cb0fa50d19075.png\"  style=\"border-radius:6px;width:100%\" onclick=\"audiolunch() \" >"
+      
+   
+ }
+
+
+
+ 
+function displayIframe() {
+let element = document.getElementById("load");
+     element.removeAttribute("hidden");
+  document.getElementById('iframeDisplay').innerHTML = " <iframe id=\"frame\" onload=\"myFunction()\" style=\"opacity: 1;\" src=\"https://daddyhd.com/embed/stream-296.php\" height=\"300\" width=\"100%\"></iframe>"
+    }
+    
+    
+    
+    function myFunction2() 
+ {
+  
+    let element = document.getElementById("frame2");
+     element.setAttribute("hidden", "hidden");
+     
+     let element2 = document.getElementById("load2");
+     element2.setAttribute("hidden", "hidden");
+     
+      document.getElementById('iframeDisplay2').innerHTML = " <img src=\"https://telegra.ph/file/e96430a7cb0fa50d19075.png\"  style=\"border-radius:6px;width:100%\" onclick=\"audiolunch() \" >"
+      
+   
+ }
+
+
+
+ 
+function displayIframe2() {
+let element = document.getElementById("load2");
+     element.removeAttribute("hidden");
+  document.getElementById('iframeDisplay2').innerHTML = " <iframe id=\"frame2\" onload=\"myFunction2()\" style=\"opacity: 1;\" src=\"https://daddyhd.com/embed/stream-297.php\" height=\"300\" width=\"100%\"></iframe>"
+    }
+    
+    
+    
+    
+    function myFunction3() 
+ {
+  
+    let element = document.getElementById("frame3");
+     element.setAttribute("hidden", "hidden");
+     
+     let element3 = document.getElementById("load3");
+     element3.setAttribute("hidden", "hidden");
+     
+      document.getElementById('iframeDisplay3').innerHTML = " <img src=\"https://telegra.ph/file/e96430a7cb0fa50d19075.png\"  style=\"border-radius:6px;width:100%\" onclick=\"audiolunch() \" >"
+      
+   
+ }
+
+
+
+ 
+function displayIframe3() {
+let element = document.getElementById("load3");
+     element.removeAttribute("hidden");
+  document.getElementById('iframeDisplay3').innerHTML = " <iframe id=\"frame3\" onload=\"myFunction3()\" style=\"opacity: 1;\" src=\"https://daddyhd.com/embed/stream-298.php\" height=\"300\" width=\"100%\"></iframe>"
+    }
+    
+    
+       
+    function myFunction4() 
+ {
+  
+    let element = document.getElementById("frame4");
+     element.setAttribute("hidden", "hidden");
+     
+     let element4 = document.getElementById("load4");
+     element4.setAttribute("hidden", "hidden");
+     
+      document.getElementById('iframeDisplay4').innerHTML = " <img src=\"https://telegra.ph/file/e96440a7cb0fa50d19075.png\"  style=\"border-radius:6px;width:100%\" onclick=\"audiolunch() \" >"
+      
+   
+ }
+
+
+
+ 
+function displayIframe4() {
+let element = document.getElementById("load4");
+     element.removeAttribute("hidden");
+  document.getElementById('iframeDisplay4').innerHTML = " <iframe id=\"frame4\" onload=\"myFunction4()\" style=\"opacity: 1;\" src=\"https://daddyhd.com/embed/stream-299.php\" height=\"400\" width=\"100%\"></iframe>"
+    }
+
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+ </body>
 </html>
